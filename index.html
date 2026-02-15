@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handwriting Verification Demo</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: Arial;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            display: inline-block;
+        }
+        input {
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            background: #00ffcc;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>✍️ Handwriting Verification System</h1>
+
+    <div class="card">
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file1" accept="image/*" required><br>
+            <input type="file" name="file2" accept="image/*" required><br>
+            <button type="submit">Check Similarity</button>
+        </form>
+
+        {% if result %}
+            <div class="result">{{ result }}</div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
