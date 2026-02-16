@@ -1,3 +1,4 @@
+##
 Handwriting Writer Verification System (v2)
 An AI-based handwriting verification system that determines whether two handwritten English samples belong to the same person using advanced image preprocessing and similarity analysis.
 This upgraded version improves robustness using edge detection and adaptive thresholding techniques.
@@ -42,3 +43,40 @@ If similarity score > 0.75
 Else
 → Different Writer ❌
 
+#$📂 Project Structure
+Copy code
+
+handwriting_demo/
+│
+├── app.py
+├── static/
+│     └── uploads/
+├── templates/
+│     └── index.html
+└── README.md
+▶️ How to Run the Project
+1️⃣ Clone Repository
+Copy code
+
+git clone <your_repo_link>
+cd handwriting_demo
+2️⃣ Create Virtual Environment
+Copy code
+
+python -m venv venv
+3️⃣ Activate Environment (Windows)
+Copy code
+
+.\venv\Scripts\activate
+4️⃣ Install Dependencies
+Copy code
+
+pip install flask opencv-python numpy scikit-learn
+5️⃣ Run Application
+Copy code
+
+python app.py
+6️⃣ Open Browser
+Copy code
+
+http://127.0.0.1:5000
