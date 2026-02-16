@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handwriting Verification System</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #141e30, #243b55);
+            font-family: Arial;
+            color: white;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.08);
+            padding: 40px;
+            border-radius: 20px;
+            display: inline-block;
+            box-shadow: 0 0 25px rgba(0,0,0,0.4);
+        }
+
+        input {
+            margin: 15px;
+            padding: 5px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border-radius: 10px;
+            border: none;
+            background: #00ffcc;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #00ccaa;
+        }
+
+        .result {
+            margin-top: 25px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>✍️ Handwriting Writer Verification (v2)</h1>
+
+    <div class="card">
+        <form method="POST" enctype="multipart/form-data">
+            <div>
+                <p>Upload Sample 1</p>
+                <input type="file" name="file1" accept="image/*" required>
+            </div>
+
+            <div>
+                <p>Upload Sample 2</p>
+                <input type="file" name="file2" accept="image/*" required>
+            </div>
+
+            <br>
+            <button type="submit">Analyze Writing</button>
+        </form>
+
+        {% if result %}
+            <div class="result" style="color: {{ color }};">
+                {{ result }}
+            </div>
+        {% endif %}
+    </div>
+
+</body>
+</html>
