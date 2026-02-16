@@ -1,8 +1,12 @@
 ##
-Handwriting Writer Verification System (v2)
+ 
+ Handwriting Writer Verification System (v2)
+ 
 An AI-based handwriting verification system that determines whether two handwritten English samples belong to the same person using advanced image preprocessing and similarity analysis.
+
 This upgraded version improves robustness using edge detection and adaptive thresholding techniques.
 📌 Project Overview
+
 This system allows users to upload two handwritten English images.
 The application processes both images using computer vision techniques and compares their structural writing patterns using hybrid similarity metrics.
 The system predicts whether both samples are written by the same person.
@@ -80,3 +84,29 @@ python app.py
 Copy code
 
 http://127.0.0.1:5000
+##
+⚠️ Limitations
+No deep learning model yet
+Sensitive to extreme rotation
+Works best when same sentence is written
+Prototype-level biometric verification
+🔮 Future Improvements
+CNN-based feature extraction
+Siamese Neural Network implementation
+Training on IAM Handwriting Dataset
+Writer embedding generation
+Accuracy benchmarking
+Cloud deployment
+REST API version
+Mobile integration
+🎯 Project Category
+Computer Vision
+Biometric Authentication
+Writer Verification
+Pattern Recognition
+👨‍💻 Author
+Manoj T K
+Computer Science Engineering
+AI & Machine Learning Enthusiast
+
+--Thank you 🙏 ---------------_--------
