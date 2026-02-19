@@ -51,14 +51,19 @@ Cosine similarity is calculated between image vectors.
 If similarity is above threshold (0.90), system predicts same writer.
 
 
+##
 📂 Project Structure
 handwriting_demo/
+
 │
 ├── app.py
+
 ├── static/
 │     └── uploads/
+
 ├── templates/
 │     └── index.html
+
 └── README.md
 
 ▶️ How to Run the Project
