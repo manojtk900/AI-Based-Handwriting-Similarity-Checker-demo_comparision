@@ -125,7 +125,7 @@ Deployment to cloud
 
 This project can be extended into a full AI-powered biometric writer verification system using deep learning techniques such as Siamese Networks and Contrastive Loss.
 
-👨‍💻 Author
+Author
 
 Manoj T K
 Computer Science Engineering
